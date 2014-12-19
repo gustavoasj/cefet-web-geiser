@@ -1,6 +1,12 @@
 var express = require('express'),
     app = express();
-
+var str = undefined;
+var fs = require('fs');
+var buf= fs.readFile('server/data/jogadores.json', 'utf8', function read(err,data){
+    if(err) throw err;
+    str= data;
+});
+    
     
 // carregar "banco de dados" (data/jogadores.json e data/jogosPorJogador.json)
 // dica: 3-4 linhas de código (você deve usar o módulo de filesystem (fs))
@@ -10,7 +16,11 @@ var db = {
 app.listen(3000);
 app.use(express.static('client'));
 
-
+app.set('view engine', 'hbs');
+app.set('views', 'server/views');
+app.get('/', function (req, res) {
+  res.render('index');
+})
 // configurar qual templating engine usar. Sugestão: hbs (handlebars)
 //app.set('view engine', '???');
 
