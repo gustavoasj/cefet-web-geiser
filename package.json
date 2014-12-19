@@ -1,0 +1,24 @@
+{
+  "name": "Geiser",
+  "version": "0.1.0",
+  "description": "Um cadastrador de jogos",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gustavoasj/cefet-web-geiser.git"
+  },
+  "author": "Gustavo Junqueira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gustavoasj/cefet-web-geiser/issues"
+  },
+  "dependencies": {
+    "express": "latest",
+    "hbs": "^2.7.0",
+    "hogan": "^1.0.2"
+  },
+  "homepage": "https://github.com/gustavoasj/cefet-web-geiser"
+}

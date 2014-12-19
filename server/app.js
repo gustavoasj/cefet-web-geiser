@@ -1,10 +1,14 @@
 var express = require('express'),
     app = express();
 
+    
 // carregar "banco de dados" (data/jogadores.json e data/jogosPorJogador.json)
 // dica: 3-4 linhas de código (você deve usar o módulo de filesystem (fs))
 var db = {
 };
+
+app.listen(3000);
+app.use(express.static('client'));
 
 
 // configurar qual templating engine usar. Sugestão: hbs (handlebars)
