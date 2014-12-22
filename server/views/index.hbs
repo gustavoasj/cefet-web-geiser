@@ -31,7 +31,7 @@
         {{#each players}}
           <li class="media player-card">
             <!-- O número grande é um id de cada jogador que provém de jogadores.json, campo steamid -->
-            <a class="media-left media-middle" href={{steamid}}>
+            <a class="media-left media-middle" href=/jogador/:{{steamid}}>
               <!-- A URL da foto do jogador provem de jogadores.json, do campo avatarmedium -->
               <img src={{avatarmedium}} class="avatar">
             </a>
@@ -39,7 +39,7 @@
               <h3 class="media-heading">
                 <!-- O número grande é um id de cada jogador que provém de jogadores.json, campo steamid -->
                 <!-- O apelido do jogador provém de jogadores.json, campo personaname -->
-                <a href={{steamid}}>{{personaname}}</a>
+                <a href=/jogador/:{{steamid}}>{{personaname}}</a>
               </h3>
               <dl class="dl-horizontal">
                 <!-- O nome real do jogador provém de jogadores.json, campo realname -->
@@ -53,7 +53,7 @@
             </div>
             <div class="player-card-link-container media-right media-bottom">
               <!-- O número grande é um id de cada jogador que provém de jogadores.json, campo steamid -->
-              <a href={{steamid}} class="player-card-link">
+              <a href=/jogador/:{{steamid}} class="player-card-link">
                 Veja detalhes
               </a>
             </div>
