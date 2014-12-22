@@ -16,8 +16,8 @@ app.use(express.static('client/'));
 app.set('view engine', 'hbs');
 app.set('views', 'server/views');
 app.get('/', function (req, res) {
-  res.render('index');
-    res.send(str);
+  res.render('index' , str);
+  
 });
 // configurar qual templating engine usar. Sugestão: hbs (handlebars)
 //app.set('view engine', '???');
